@@ -10,8 +10,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		{
 			//Set the canvas of the task
 			canvas : {
-				maxWidth: 1600, //was 725
-				proportions : 0.7, //was 0.7
+				maxWidth: 725,
+				proportions : 0.7,
 				background: '#ffffff',
 				borderWidth: 5,
 				canvasBackground: '#ffffff',
@@ -23,7 +23,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Immigrant Group', //Category name to be used for feedback and logging.
 				title : {
 					media : {word : 'Immigrant Group'}, //Name of the category presented in the task.
-					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+					css : {color:'#000000','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -35,7 +35,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Immigrant Group'}
 				],
 				//Can change color and size of the targets here.
-				css : {color:'#31b404','font-size':'2em'}
+				css : {color:'#000000','font-size':'2em'}
 			},	
 			attribute1 : 
 			{
