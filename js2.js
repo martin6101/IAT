@@ -3,19 +3,19 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 	var API = new APIConstructor();
 		  return stiatExtension({
 		  category : { 
-		    name : 'Black people', //Will appear in the data.
+		    name : 'Immigrant Group', //Will appear in the data.
 		    title : {
-		      media : {word : 'Black people'}, //Name of the category presented in the task.
+		      media : {word : 'Immigrant Group'}, //Name of the category presented in the task.
 		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
-    		    	{image : 'black1.jpg'}, 
-    			{image : 'black2.jpg'}, 
-    			{image : 'black3.jpg'}, 
-    			{image : 'black4.jpg'}, 
-    			{image : 'black5.jpg'}, 
-    			{image : 'black6.jpg'}
+    		    	{word : 'Immigrant Group'}, 
+    			{word : 'Immigrant Group'}, 
+    			{word : 'Immigrant Group'}, 
+    			{word : 'Immigrant Group'}, 
+    			{word : 'Immigrant Group'}, 
+    			{word : 'Immigrant Group'}
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
