@@ -22,17 +22,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			{
 				name : 'Immigrant Group', //Category name to be used for feedback and logging.
 				title : {
-					media : {word : 'Immigrant Group'}, //Name of the category presented in the task.
+					media : {word : 'Buitenlander'}, //Name of the category presented in the task.
 					css : {color:'#000000','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
-					{word: 'Immigrant Group'},
-					{word: 'Immigrant Group'},
-					{word: 'Immigrant Group'},
-					{word: 'Immigrant Group'},
-					{word: 'Immigrant Group'},
-					{word: 'Immigrant Group'}
+					{word: 'Buitenlander'}
 				],
 				//Can change color and size of the targets here.
 				css : {color:'#000000','font-size':'2em'}
@@ -42,7 +37,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Unpleasant', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Unpleasant'}, //Name of the category presented in the task.
-					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+					css : {color:'#000000','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -54,14 +49,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Grief'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#31b404','font-size':'2em'}
+				css : {color:'#000000','font-size':'2em'}
 			},
 			attribute2 : 
 			{
 				name : 'Pleasant', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Pleasant'}, //Name of the category presented in the task.
-					css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+					css : {color:'#000000','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -73,7 +68,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Love'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#31b404','font-size':'2em'}
+				css : {color:'#000000','font-size':'2em'}
 			},	
 			trialsByBlock : 
 			[//Each object in this array defines a block
