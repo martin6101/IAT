@@ -11,12 +11,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 725, //1200, //900, //725,
-				proportions : 0.7,
+				proportions : 1, //0.7,
 				background: '#ffffff',
 				borderWidth: 0.5,
 				canvasBackground: '#ffffff',
-				borderColor: '#000000',
-				scale: 2
+				borderColor: '#525252'
 			}, 
 			//Define the category.
 			category :  
