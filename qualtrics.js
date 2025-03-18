@@ -3,7 +3,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 	var API = new APIConstructor();
 		  return stiatExtension({
 		  category : { 
-		    name : 'Buitenlanders', //Will appear in the data.
+		    name : 'Buitenlanders', //Will appear in the data. (this is a test)
 		    title : {
 		      media : {word : 'Buitenlanders'}, //Name of the category presented in the task.
 		      css : {color:'#cc0100','font-size':'2em'}, //Style of the category title.
