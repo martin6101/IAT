@@ -55,8 +55,9 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 			css : {color:'#0099ff','font-size':'3em'}
 			},
 
-  base_url : {//Where are your images at?
-    image : 'https://baranan.github.io/minno-tasks/images/'
-  }}
-  );
-  });
+  		base_url : {//Where are your images at?
+    		image : 'https://baranan.github.io/minno-tasks/images/'
+  		},
+  		fullscreen:true
+	});
+});
