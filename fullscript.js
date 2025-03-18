@@ -10,13 +10,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		{
 			//Set the canvas of the task
 			canvas: {
-				maxWidth: 725, 
+				maxWidth: 1200, //725, 
 				proportions: 0.7,
 				background: '#ffffff',
 				canvasBackground: '#ffffff',
 				css: {
-					'border-width': '3px',  // Thicker border
-					'border-color': '#008000',  // Green border
+					'border-width': '1px',  // Thicker border
+					'border-color': '#525252',  // Gray border
 					'border-style': 'solid' // Ensure the border is visible
 				}
 			}, 
