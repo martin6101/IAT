@@ -13,10 +13,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				maxWidth: 725, //1200, //900, //725,
 				proportions : 0.7,
 				background: '#ffffff',
-				borderWidth: 1,
+				borderWidth: 0.5,
 				canvasBackground: '#ffffff',
 				borderColor: '#000000',
-				scale: 1.2
+				scale: 2
 			}, 
 			//Define the category.
 			category :  
@@ -212,7 +212,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#0099ff">attribute1</font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font> ' +
-				'and for items that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
+				'and for items that belong to the category <font color="#cc0100">thecategory</font> (the immigrant group you read information about).<br/>' + 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
@@ -222,7 +222,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
 				'<font color="#0099ff">attribute1</font> ' +
-				'and for items that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
+				'and for items that belong to the category <font color="#cc0100">thecategory</font> (the immigrant group you read information about).<br/>' + 
 				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font>.<br/>' + 
 				'Items will appear one at a time.<br/><br/>' + 
