@@ -9,13 +9,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		var stiatObj = 
 		{
 			//Set the canvas of the task
-			canvas : {
-				maxWidth: 1200, //900, //725, //1200, //725,
-				proportions : 0.7,
+			canvas: {
+				maxWidth: 725, 
+				proportions: 0.7,
 				background: '#ffffff',
-				borderWidth: 0.5,
 				canvasBackground: '#ffffff',
-				borderColor: '#525252'
+				css: {
+					'border-width': '3px',  // Thicker border
+					'border-color': '#008000',  // Green border
+					'border-style': 'solid' // Ensure the border is visible
+				}
 			}, 
 			//Define the category.
 			category :  
