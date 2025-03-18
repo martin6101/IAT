@@ -18,7 +18,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'width': '1000px',  // Increase canvas width
 					'height': '600px', 
 					'border-width': '3px',  // Normal border
-					'border-color': '#525252',  // Gray border //For black: 
+					'border-color': '#525252',  // Gray border //For black: #000000
 					'border-style': 'solid' // Ensure the border is visible
 				}
 			}, 
