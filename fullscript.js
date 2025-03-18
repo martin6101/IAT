@@ -10,12 +10,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		{
 			//Set the canvas of the task
 			canvas : {
-				maxWidth: 725,
-				proportions : 0.7,
+				maxWidth: 900, //725,
+				proportions : 0.85, //0.7,
 				background: '#ffffff',
 				borderWidth: 5,
 				canvasBackground: '#ffffff',
-				borderColor: 'lightblue'
+				borderColor: '#000000'
 			}, 
 			//Define the category.
 			category :  
@@ -37,7 +37,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Unpleasant', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Unpleasant'}, //Name of the category presented in the task.
-					css : {color:'##0099ff','font-size':'2em'}, //Style of the category title.
+					css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -49,14 +49,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Grief'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'##0099ff','font-size':'2em'}
+				css : {color:'#0099ff','font-size':'2em'}
 			},
 			attribute2 : 
 			{
 				name : 'Pleasant', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Pleasant'}, //Name of the category presented in the task.
-					css : {color:'##0099ff','font-size':'2em'}, //Style of the category title.
+					css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -68,7 +68,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Love'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'##0099ff','font-size':'2em'}
+				css : {color:'#0099ff','font-size':'2em'}
 			},	
 			trialsByBlock : 
 			[//Each object in this array defines a block
@@ -156,13 +156,50 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// The following variables in the instructions text will be replaced: 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
+
+			// instTemplatePractice : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			// 	'<font color="#000000"><u>Part blockNum of nBlocks</u><br/><br/></p>' + 
+			// 	'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
+			// 	'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
+			// 	'<font color="#31b404">attribute1</font>.<br/>' + 
+			// 	'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
+			// 	'<font color="#31b404">attribute2</font>.<br/>' + 
+			// 	'Items will appear one at a time.<br/><br/>' + 
+			// 	'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
+			// 	'Press the other key to continue.<br/><br/>' + 
+			// 	'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+			// instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			// 	'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			// 	'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
+			// 	'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
+			// 	'<font color="#31b404">attribute1</font>.<br/>' + 
+			// 	'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
+			// 	'<font color="#31b404">attribute2</font> ' +
+			// 	'and for items that belong to the category <font color="#31b404">thecategory</font>.<br/>' + 
+			// 	'Items will appear one at a time.<br/><br/>' + 
+			// 	'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
+			// 	'Press the other key to continue.<br/><br/>' + 
+			// 	'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+			// instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			// 	'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			// 	'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
+			// 	'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
+			// 	'<font color="#31b404">attribute1</font> ' +
+			// 	'and for items that belong to the category <font color="#31b404">thecategory</font>.<br/>' + 
+			// 	'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
+			// 	'<font color="#31b404">attribute2</font>.<br/>' + 
+			// 	'Items will appear one at a time.<br/><br/>' + 
+			// 	'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
+			// 	'Press the other key to continue.<br/><br/>' + 
+			// 	'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+			
 			instTemplatePractice : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks</u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
-				'<font color="#31b404">attribute1</font>.<br/>' + 
+				'<font color="#0099ff">attribute1</font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
-				'<font color="#31b404">attribute2</font>.<br/>' + 
+				'<font color="#0099ff">attribute2</font>.<br/>' + 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
@@ -171,10 +208,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
-				'<font color="#31b404">attribute1</font>.<br/>' + 
+				'<font color="#0099ff">attribute1</font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
-				'<font color="#31b404">attribute2</font> ' +
-				'and for items that belong to the category <font color="#31b404">thecategory</font>.<br/>' + 
+				'<font color="#0099ff">attribute2</font> ' +
+				'and for items that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
@@ -183,15 +220,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
-				'<font color="#31b404">attribute1</font> ' +
-				'and for items that belong to the category <font color="#31b404">thecategory</font>.<br/>' + 
+				'<font color="#0099ff">attribute1</font> ' +
+				'and for items that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
-				'<font color="#31b404">attribute2</font>.<br/>' + 
+				'<font color="#0099ff">attribute2</font>.<br/>' + 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
-			
+				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				
 			//The default feedback messages for each cutoff. 
 			//If you put attribute1, attribute2 and category here, 
 			//these will be replaced with the names of attribute1, attribute2 and category.
