@@ -58,6 +58,6 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
   		base_url : {//Where are your images at?
     		image : 'https://baranan.github.io/minno-tasks/images/'
   		},
-  		fullscreen:true
+  		fullscreen:false
 	});
 });
