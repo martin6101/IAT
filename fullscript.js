@@ -39,38 +39,40 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},	
 			attribute1 : 
 			{
-				name : 'Unpleasant', //Attribute name to be used for feedback and logging
+				name : 'Bad', //Attribute name to be used for feedback and logging
 				title : {
-					media : {word : 'Unpleasant'}, //Name of the category presented in the task.
+					media : {word : 'Bad'}, //Name of the category presented in the task.
 					css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
-					{word: 'Bomb'},
-					{word: 'Abuse'},
-					{word: 'Sadness'},
-					{word: 'Pain'},
+					{word: 'Aggressive'},
+					{word: 'Disease'},
+					{word: 'Failure'},
 					{word: 'Poison'},
-					{word: 'Grief'}
+					{word: 'Disaster'},
+					{word: 'Damage'},
+					{word: 'Hostile'}
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#0099ff','font-size':'2em'}
 			},
 			attribute2 : 
 			{
-				name : 'Pleasant', //Attribute name to be used for feedback and logging
+				name : 'Good', //Attribute name to be used for feedback and logging
 				title : {
-					media : {word : 'Pleasant'}, //Name of the category presented in the task.
+					media : {word : 'Good'}, //Name of the category presented in the task.
 					css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
+					{word: 'Success'},
+					{word: 'Glory'},
+					{word: 'Hope'},
+					{word: 'Peace'},
+					{word: 'Happiness'},
 					{word: 'Paradise'},
-					{word: 'Pleasure'},
-					{word: 'Cheer'},
-					{word: 'Wonderful'},
-					{word: 'Splendid'},
-					{word: 'Love'}
+					{word: 'Joy'}
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#0099ff','font-size':'2em'}
@@ -153,7 +155,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
-			finalText: 'You have completed the sorting task<br/><br/>Press the <b>space bar</b> to continue.', 
+			finalText: 'You have completed the sorting task.<br/><br/>Press the <b>space bar</b> to continue.', 
 
 			//These are templates for the instructions in the task. 
 			//If you want more specific instructions for different blocks, 

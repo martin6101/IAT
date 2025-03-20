@@ -18,38 +18,40 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 
   		attribute1 : 
 			{
-			name : 'Unpleasant', //Attribute label
+			name : 'Bad', //Attribute label
 			title : {
-				media : {word : 'Unpleasant'}, //Name of the category presented in the task.
+				media : {word : 'Bad'}, //Name of the category presented in the task.
 				css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Bomb'},
-				{word: 'Abuse'},
-				{word: 'Sadness'},
-				{word: 'Pain'},
+				{word: 'Aggressive'},
+				{word: 'Disease'},
+				{word: 'Failure'},
 				{word: 'Poison'},
-				{word: 'Grief'}
+				{word: 'Disaster'},
+				{word: 'Damage'},
+				{word: 'Hostile'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#0099ff','font-size':'3em'}
 			},
 		attribute2 : 
 			{
-			name : 'Pleasant', //Attribute label
+			name : 'Good', //Attribute label
 			title : {
-				media : {word : 'Pleasant'}, //Name of the category presented in the task.
+				media : {word : 'Good'}, //Name of the category presented in the task.
 				css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
+				{word: 'Success'},
+				{word: 'Glory'},
+				{word: 'Hope'},
+				{word: 'Peace'},
+				{word: 'Happiness'},
 				{word: 'Paradise'},
-				{word: 'Pleasure'},
-				{word: 'Cheer'},
-				{word: 'Wonderful'},
-				{word: 'Splendid'},
-				{word: 'Love'}
+				{word: 'Joy'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#0099ff','font-size':'3em'}
