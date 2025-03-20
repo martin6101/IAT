@@ -20,7 +20,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 			{
 			name : 'Unpleasant', //Attribute label
 			title : {
-				media : {word : 'Negative'}, //Name of the category presented in the task.
+				media : {word : 'Unpleasant'}, //Name of the category presented in the task.
 				css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
@@ -39,7 +39,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 			{
 			name : 'Pleasant', //Attribute label
 			title : {
-				media : {word : 'Positive'}, //Name of the category presented in the task.
+				media : {word : 'Pleasant'}, //Name of the category presented in the task.
 				css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
