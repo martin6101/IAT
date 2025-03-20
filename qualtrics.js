@@ -9,7 +9,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 		      css : {color:'#cc0100','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
-		    media : [ //Stimuli content as PIP's media objects
+		    media : [ //Stimuli content as PIP's media objects // test
     		    	{word : 'Buitenlanders'}    	
 		    ], 
 		    //Stimulus css (style)
