@@ -153,7 +153,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
-			finalText: 'You have completed this task<br/><br/>Press SPACE to continue.', 
+			finalText: 'You have completed the sorting task<br/><br/>Press the <b>space bar</b> to continue.', 
 
 			//These are templates for the instructions in the task. 
 			//If you want more specific instructions for different blocks, 
@@ -201,35 +201,35 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instTemplatePractice : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks</u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
+				'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute1</font>.<br/>' + 
-				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
+				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font>.<br/>' + 
-				'Items will appear one at a time.<br/><br/>' + 
+				'Words will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
+				'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute1</font>.<br/>' + 
-				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
+				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font> ' +
-				'and for items that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
-				'Items will appear one at a time.<br/><br/>' + 
+				'and for words that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
+				'Words will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
+				'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute1</font> ' +
-				'and for items that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
-				'Put a right finger on the <b>I</b> key for items that belong to the category ' + 
+				'and for words that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
+				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font>.<br/>' + 
-				'Items will appear one at a time.<br/><br/>' + 
+				'Words will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
