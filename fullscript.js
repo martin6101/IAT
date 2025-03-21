@@ -19,10 +19,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'height': '600px', 
 					'border-width': '3px',  // Normal border
 					'border-color': '#525252',  // Gray border //For black: #000000
-					'border-style': 'solid',
-					'position': 'absolute',  
-       				'top': '50%',  
-        			'transform': 'translateY(-50%)'
+					'border-style': 'solid'
 				}
 			}, 
 			//Define the category.
