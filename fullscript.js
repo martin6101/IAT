@@ -20,10 +20,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'border-width': '3px',  // Normal border
 					'border-color': '#525252',  // Gray border //For black: #000000
 					'border-style': 'solid',
-					'display': 'flex',               // Enable flexbox
-					'justify-content': 'center',      // Center horizontally
-					'align-items': 'center',          // Center vertically
-					'text-align': 'center' // Ensure the border is visible
+					'position': 'absolute',  
+       				'top': '50%',  
+        			'transform': 'translateY(-50%)'
 				}
 			}, 
 			//Define the category.
