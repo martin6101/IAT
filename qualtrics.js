@@ -25,7 +25,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Aggressive'},
+				{word: 'Filthy'},
 				{word: 'Disease'},
 				{word: 'Failure'},
 				{word: 'Poison'},
