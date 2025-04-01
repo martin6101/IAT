@@ -15,9 +15,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				background: '#ffffff',
 				canvasBackground: '#ffffff',
 				css: {
-					'width': '1000px',  // Increase canvas width
+					'width': '1200px',  // Increase canvas width
 					'height': '600px', 
-					'border-width': '3px',  // Normal border
+					'border-width': '2px',  // Normal border
 					'border-color': '#525252',  // Gray border //For black: #000000
 					'border-style': 'solid'
 				}
@@ -151,9 +151,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			orCss : {'font-size':'1.8em', color:'#525252', 'font-family': 'Times New Roman'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:Times New Roman">' +
+			remindErrorText : '<p align="center" style="font-size: 0.6em; font-family: Times New Roman;">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Press the other key to continue.<p/>',
+			'Press the other key to continue.</p>',
 			
 			finalText: 'You have completed the sorting task.<br/><br/>Press the <b>space bar</b> to continue.', 
 
