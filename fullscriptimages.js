@@ -25,9 +25,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Define the category.
 			category :  
 			{
-				name : 'Buitenlanders', //Category name to be used for feedback and logging.
+				name : 'buitenlanders', //Category name to be used for feedback and logging.
 				title : {
-					media : {word : 'Buitenlanders'}, //Name of the category presented in the task.
+					media : {word : 'buitenlanders'}, //Name of the category presented in the task.
 					css : {color:'#cc0100','font-size':'0.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
@@ -39,40 +39,40 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},	
 			attribute1 : 
 			{
-				name : 'Bad', //Attribute name to be used for feedback and logging
+				name : 'bad', //Attribute name to be used for feedback and logging
 				title : {
-					media : {word : 'Bad'}, //Name of the category presented in the task.
+					media : {word : 'bad'}, //Name of the category presented in the task.
 					css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
-					{word: 'Filthy'},
-					{word: 'Disease'},
-					{word: 'Failure'},
-					{word: 'Poison'},
-					{word: 'Disaster'},
-					{word: 'Damage'},
-					{word: 'Hostile'}
+					{word: 'filthy'},
+					{word: 'disease'},
+					{word: 'failure'},
+					{word: 'poison'},
+					{word: 'disaster'},
+					{word: 'damage'},
+					{word: 'hostile'}
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#0099ff','font-size':'2em'}
 			},
 			attribute2 : 
 			{
-				name : 'Good', //Attribute name to be used for feedback and logging
+				name : 'good', //Attribute name to be used for feedback and logging
 				title : {
-					media : {word : 'Good'}, //Name of the category presented in the task.
+					media : {word : 'good'}, //Name of the category presented in the task.
 					css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
-					{word: 'Success'},
-					{word: 'Glory'},
-					{word: 'Hope'},
-					{word: 'Peace'},
-					{word: 'Happiness'},
-					{word: 'Paradise'},
-					{word: 'Joy'}
+					{word: 'success'},
+					{word: 'glory'},
+					{word: 'hope'},
+					{word: 'peace'},
+					{word: 'happiness'},
+					{word: 'paradise'},
+					{word: 'joy'}
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#0099ff','font-size':'2em'}
