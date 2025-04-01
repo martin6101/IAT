@@ -3,10 +3,10 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 	var API = new APIConstructor();
 		  return stiatExtension({
 		  category : { 
-		    name : 'Buitenlanders', //Will appear in the data. (this is a test)
+		    name : 'buitenlanders', //Will appear in the data. (this is a test)
 		    title : {
-		      media : {word : 'Buitenlanders'}, //Name of the category presented in the task.
-		      css : {color:'#cc0100','font-size':'2em'}, //Style of the category title.
+		      media : {word : 'buitenlanders'}, //Name of the category presented in the task.
+		      css : {color:'#cc0100','font-size':'0.8em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects // test
@@ -14,48 +14,48 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 		    ], 
 		    //Stimulus css (style)
 			//stimulusCss: {'max-height': '120px'},
-		    css : {color:'#cc0100','font-size':'3em'}
+		    css : {color:'#cc0100','font-size':'2em'}
 		  },	
 
   		attribute1 : 
 			{
-			name : 'Bad', //Attribute label
+			name : 'bad', //Attribute label
 			title : {
-				media : {word : 'Bad'}, //Name of the category presented in the task.
-				css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
+				media : {word : 'bad'}, //Name of the category presented in the task.
+				css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Filthy'},
-				{word: 'Disease'},
-				{word: 'Failure'},
-				{word: 'Poison'},
-				{word: 'Disaster'},
-				{word: 'Damage'},
-				{word: 'Hostile'}
+				{word: 'filthy'},
+				{word: 'disease'},
+				{word: 'failure'},
+				{word: 'poison'},
+				{word: 'disaster'},
+				{word: 'damage'},
+				{word: 'hostile'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#0099ff','font-size':'3em'}
+			css : {color:'#0099ff','font-size':'2em'}
 			},
 		attribute2 : 
 			{
-			name : 'Good', //Attribute label
+			name : 'good', //Attribute label
 			title : {
-				media : {word : 'Good'}, //Name of the category presented in the task.
-				css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
+				media : {word : 'good'}, //Name of the category presented in the task.
+				css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Success'},
-				{word: 'Glory'},
-				{word: 'Hope'},
-				{word: 'Peace'},
-				{word: 'Happiness'},
-				{word: 'Paradise'},
-				{word: 'Joy'}
+				{word: 'success'},
+				{word: 'glory'},
+				{word: 'hope'},
+				{word: 'peace'},
+				{word: 'happiness'},
+				{word: 'paradise'},
+				{word: 'joy'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#0099ff','font-size':'3em'}
+			css : {color:'#0099ff','font-size':'2em'}
 			},
 
   		//base_url : {//Where are your images at?
