@@ -35,7 +35,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_23MrmnlV9D3xvZI'}
 				],
 				//Can change color and size of the targets here.
-				css : {color:'#cc0100','font-size':'2em'}
+				css : {color:'#cc0100','font-size':'3em'}
 			},	
 			attribute1 : 
 			{
@@ -55,7 +55,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'hostile'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#0099ff','font-size':'2em'}
+				css : {color:'#0099ff','font-size':'3em'}
 			},
 			attribute2 : 
 			{
@@ -75,7 +75,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'joy'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#0099ff','font-size':'2em'}
+				css : {color:'#0099ff','font-size':'3em'}
 			},	
 			trialsByBlock : 
 			[//Each object in this array defines a block
@@ -230,7 +230,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p align="center">Put a left finger on the <b>E</b> key for words that belong to the category ' + 
 				'<font color="#0099ff"><b>attribute1</b></font>.</p>' +
 				'<p align="center">Put a right finger on the <b>I</b> key for words that belong to the category ' + 
-				'<font color="#0099ff"><b>attribute2</b></font> and for people that belong to the category ' +
+				'<font color="#0099ff"><b>attribute2</b></font> and for people that belong to the group ' +
 				'<font color="#cc0100"><b>thecategory</b></font>.</p>' +
 				'<p align="center">Items will appear one at a time.</p>' +
 				'<br/>' +
@@ -257,7 +257,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
 				'<font color="#0099ff"><b>attribute1</b></font> ' +
-				'and for people that belong to the category <font color="#cc0100"><b>thecategory</b></font>.<br/>' + 
+				'and for people that belong to the group <font color="#cc0100"><b>thecategory</b></font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
 				'<font color="#0099ff"><b>attribute2</b></font>.<br/>' + 
 				'Items will appear one at a time.<br/><br/>' + 

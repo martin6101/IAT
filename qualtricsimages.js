@@ -14,7 +14,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 		    ], 
 		    //Stimulus css (style)
 			//stimulusCss: {'max-height': '120px'},
-		    css : {color:'#cc0100','font-size':'2em'}
+		    css : {color:'#cc0100','font-size':'3em'}
 		  },	
 
   		attribute1 : 
@@ -35,7 +35,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 				{word: 'hostile'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#0099ff','font-size':'2em'}
+			css : {color:'#0099ff','font-size':'3em'}
 			},
 		attribute2 : 
 			{
@@ -55,12 +55,12 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 				{word: 'joy'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#0099ff','font-size':'2em'}
+			css : {color:'#0099ff','font-size':'3em'}
 			},
 
   		//base_url : {//Where are your images at?
     	//	image : 'https://martin6101.github.io/IAT/Avatar.png'
   		//},
-  		fullscreen:false
+  		fullscreen:true
 	});
 });
