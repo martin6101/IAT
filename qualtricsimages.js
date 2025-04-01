@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(APIConstructor, stiatExtension){
+define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], function(APIConstructor, stiatExtension){
 	
 	var API = new APIConstructor();
 		  return stiatExtension({
