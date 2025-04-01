@@ -173,7 +173,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<br/>' +
 				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
 				'<br/>' +
-				'<p><b>Press the <u>space bar</u> when you are ready to begin.</b></p>' +
+				'<p>Press the <b>space bar</b> to begin.</p>' +
 				'</div>',
 		  
 			//instTemplatePractice : '<div><p align="center" style="font-size:20px; font-family:arial">' +
