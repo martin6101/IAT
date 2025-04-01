@@ -164,7 +164,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
 	
-			instTemplatePractice : '<div style="text-align:center; font-size:20px; font-family:Times New Roman">' +
+			instTemplatePractice : '<div style="text-align:center; font-size:22px; font-family:Times New Roman">' +
 				'<p><font color="#525252"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
 				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
@@ -177,7 +177,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p>Press the <b>space bar</b> to begin.</p>' +
 				'</div>',
 			
-			instTemplateCategoryRight : '<div style="text-align:center; font-size:20px; font-family:Times New Roman">' +
+			instTemplateCategoryRight : '<div style="text-align:center; font-size:22px; font-family:Times New Roman">' +
 				'<p><font color="#525252"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
 				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
@@ -189,7 +189,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p>Press the <b>space bar</b> to begin.</p>' +
 				'</div>',
 			
-			instTemplateCategoryLeft : '<div style="text-align:center; font-size:20px; font-family:Times New Roman">' +
+			instTemplateCategoryLeft : '<div style="text-align:center; font-size:22px; font-family:Times New Roman">' +
 			  	'<p><font color="#525252"><u>Part blockNum of nBlocks</u></font></p>' +
 			  	'<br/>' +
 			 	'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
