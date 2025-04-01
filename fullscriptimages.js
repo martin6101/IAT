@@ -166,11 +166,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 	
 			instTemplatePractice : '<div style="text-align:center; font-size:20px; font-family:arial">' +
 				'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
+				'<br/>' +
 				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
 				'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
 				'<p>Words will appear one at a time.</p>' +
-				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear.</p>' +
-				'<p>Correct your response by pressing the other key.</p>' +
+				'<br/>' +
+				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
+				'<br/>' +
 				'<p><b>Press the <u>space bar</u> when you are ready to begin.</b></p>' +
 				'</div>',
 		  
