@@ -61,6 +61,6 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
   		//base_url : {//Where are your images at?
     	//	image : 'https://martin6101.github.io/IAT/Avatar.png'
   		//},
-  		fullscreen:true
+  		fullscreen:false
 	});
 });

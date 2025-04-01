@@ -145,7 +145,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Press "E" for', 
 			rightKeyText : 'Press "I" for', 
-			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
+			keysCss : {'font-size':'0.8em', 'font-family':'arial', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
@@ -169,65 +169,65 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<br/>' +
 				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
 				'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
-				'<p>Words will appear one at a time.</p>' +
+				'<p>Word will appear in the center of the screen, one at a time.</p>' +
 				'<br/>' +
 				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
 				'<br/>' +
 				'<p>Press the <b>space bar</b> to begin.</p>' +
 				'</div>',
-		  
-			//instTemplatePractice : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				//'<font color="#000000"><u>Part blockNum of nBlocks</u><br/><br/></p>' + 
-				//'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				//'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
-				//'<font color="#0099ff"><b>attribute1</b></font>.<br/>' + 
-				//'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
-				//'<font color="#0099ff"><b>attribute2</b></font>.<br/>' + 
-				//'Words will appear one at a time.<br/><br/>' + 
-				//'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
-				//'Press the other key to continue.<br/><br/>' + 
-				//'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			
-			instTemplateCategoryRight : '<div style="font-size:20px; font-family:arial">' +
-				'<p align="center"><u>Part blockNum of nBlocks</u></p>' +
+			instTemplateCategoryRight : '<div style="text-align:center; font-size:20px; font-family:arial">' +
+				'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
-				'<p align="center">Put a left finger on the <b>E</b> key for words that belong to the category ' + 
-				'<font color="#0099ff"><b>attribute1</b></font>.</p>' +
-				'<p align="center">Put a right finger on the <b>I</b> key for words that belong to the category ' + 
-				'<font color="#0099ff"><b>attribute2</b></font> and for people that belong to the group ' +
-				'<font color="#cc0100"><b>thecategory</b></font>.</p>' +
-				'<p align="center">Items will appear one at a time.</p>' +
+				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
+				'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
+				'<p>Each word or person will appear in the center of the screen, one at a time.</p>' +
 				'<br/>' +
-				'<p align="center">If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear.</p>' +
-				'<p align="center">Press the other key to continue.</p>' +
+				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
 				'<br/>' +
-				'<p align="center"><b>Press the <u>space bar</u> when you are ready to start.</b></p>' +
-			  '</div>',
+				'<p>Press the <b>space bar</b> to begin.</p>' +
+			  	'</div>',
+			
+			instTemplateCategoryLeft : '<div style="text-align:center; font-size:20px; font-family:arial">' +
+			  	'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
+			  	'<br/>' +
+			 	'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
+			  	'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
+			  	'<p>Each word or person will appear in the center of the screen, one at a time.</p>' +
+			  	'<br/>' +
+			  	'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
+			  	'<br/>' +
+			  	'<p>Press the <b>space bar</b> to begin.</p>' +
+				'</div>',  
+
+			// instTemplateCategoryRight : '<div style="font-size:20px; font-family:arial">' +
+			// 	'<p align="center"><u>Part blockNum of nBlocks</u></p>' +
+			// 	'<br/>' +
+			// 	'<p align="center">Put a left finger on the <b>E</b> key for words that belong to the category ' + 
+			// 	'<font color="#0099ff"><b>attribute1</b></font>.</p>' +
+			// 	'<p align="center">Put a right finger on the <b>I</b> key for words that belong to the category ' + 
+			// 	'<font color="#0099ff"><b>attribute2</b></font> and for people that belong to the group ' +
+			// 	'<font color="#cc0100"><b>thecategory</b></font>.</p>' +
+			// 	'<p align="center">Items will appear one at a time.</p>' +
+			// 	'<br/>' +
+			// 	'<p align="center">If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear.</p>' +
+			// 	'<p align="center">Press the other key to continue.</p>' +
+			// 	'<br/>' +
+			// 	'<p align="center"><b>Press the <u>space bar</u> when you are ready to start.</b></p>' +
+			//   '</div>',
 			  
-			// instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			// instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 			// 	'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 			// 	'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 			// 	'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
-			// 	'<font color="#0099ff"><b>attribute1</b></font>.<br/>' + 
+			// 	'<font color="#0099ff"><b>attribute1</b></font> ' +
+			// 	'and for people that belong to the group <font color="#cc0100"><b>thecategory</b></font>.<br/>' + 
 			// 	'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
-			// 	'<font color="#0099ff"><b>attribute2</b></font> ' +
-			// 	'and for people that belong to the category <font color="#cc0100"><b>thecategory</b></font>.<br/>' + 
+			// 	'<font color="#0099ff"><b>attribute2</b></font>.<br/>' + 
 			// 	'Items will appear one at a time.<br/><br/>' + 
 			// 	'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 			// 	'Press the other key to continue.<br/><br/>' + 
-			// 	'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
-			instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
-				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
-				'<font color="#0099ff"><b>attribute1</b></font> ' +
-				'and for people that belong to the group <font color="#cc0100"><b>thecategory</b></font>.<br/>' + 
-				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
-				'<font color="#0099ff"><b>attribute2</b></font>.<br/>' + 
-				'Items will appear one at a time.<br/><br/>' + 
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
-				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+			// 	'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
 				
 			//The default feedback messages for each cutoff. 
 			//If you put attribute1, attribute2 and category here, 
