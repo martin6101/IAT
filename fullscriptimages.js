@@ -28,7 +28,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Buitenlanders', //Category name to be used for feedback and logging.
 				title : {
 					media : {word : 'Buitenlanders'}, //Name of the category presented in the task.
-					css : {color:'#cc0100','font-size':'2em'}, //Style of the category title.
+					css : {color:'#cc0100','font-size':'0.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -42,7 +42,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Bad', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Bad'}, //Name of the category presented in the task.
-					css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
+					css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -62,7 +62,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Good', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Good'}, //Name of the category presented in the task.
-					css : {color:'#0099ff','font-size':'2em'}, //Style of the category title.
+					css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -148,7 +148,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
-			orCss : {'font-size':'1.8em', color:'#000000'},
+			orCss : {'font-size':'0.8em', color:'#000000'},
 
 			//Will appear at the bottom of the screen during trials.
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
@@ -218,8 +218,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#0099ff">attribute1</font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font> ' +
-				'and for words that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
-				'Words will appear one at a time.<br/><br/>' + 
+				'and for people that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
+				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
@@ -228,10 +228,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute1</font> ' +
-				'and for words that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
+				'and for people that belong to the category <font color="#cc0100">thecategory</font>.<br/>' + 
 				'Put a right finger on the <b>I</b> key for words that belong to the category ' + 
 				'<font color="#0099ff">attribute2</font>.<br/>' + 
-				'Words will appear one at a time.<br/><br/>' + 
+				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
