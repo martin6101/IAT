@@ -10,10 +10,10 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects // test
-    		    	{image : 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_L7ZxuuAyCVkJqy3'}    	
+    		    	{image : 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_23MrmnlV9D3xvZI'}    	
 		    ], 
 		    //Stimulus css (style)
-			stimulusCss: {'max-height': '120px'},
+			//stimulusCss: {'max-height': '120px'},
 		    css : {color:'#cc0100','font-size':'3em'}
 		  },	
 

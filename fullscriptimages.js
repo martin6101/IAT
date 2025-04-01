@@ -32,7 +32,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
-					{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_L7ZxuuAyCVkJqy3'}
+					{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_23MrmnlV9D3xvZI'}
 				],
 				//Can change color and size of the targets here.
 				css : {color:'#cc0100','font-size':'2em'}
