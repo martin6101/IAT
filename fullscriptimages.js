@@ -145,13 +145,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Press "E" for', 
 			rightKeyText : 'Press "I" for', 
-			keysCss : {'font-size':'0.8em', 'font-family':'arial', color:'#000000'},
+			keysCss : {'font-size':'0.8em', 'font-family':'Times New Roman', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
+			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:Times New Roman">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
@@ -164,10 +164,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
 	
-			instTemplatePractice : '<div style="text-align:center; font-size:20px; font-family:arial">' +
+			instTemplatePractice : '<div style="text-align:center; font-size:20px; font-family:Times New Roman">' +
 				'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
-				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
+				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
+				'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
 				'<br/>' +
 				'<p>Words will appear in the center of the screen, one at a time.</p>' +
 				'<br/>' +
@@ -176,7 +177,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p>Press the <b>space bar</b> to begin.</p>' +
 				'</div>',
 			
-			instTemplateCategoryRight : '<div style="text-align:center; font-size:20px; font-family:arial">' +
+			instTemplateCategoryRight : '<div style="text-align:center; font-size:20px; font-family:Times New Roman">' +
 				'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
 				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
@@ -188,7 +189,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p>Press the <b>space bar</b> to begin.</p>' +
 				'</div>',
 			
-			instTemplateCategoryLeft : '<div style="text-align:center; font-size:20px; font-family:arial">' +
+			instTemplateCategoryLeft : '<div style="text-align:center; font-size:20px; font-family:Times New Roman">' +
 			  	'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 			  	'<br/>' +
 			 	'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
