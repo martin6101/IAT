@@ -167,9 +167,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instTemplatePractice : '<div style="text-align:center; font-size:20px; font-family:arial">' +
 				'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
-				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
-				'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
-				'<p>Word will appear in the center of the screen, one at a time.</p>' +
+				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
+				'<br/>' +
+				'<p>Words will appear in the center of the screen, one at a time.</p>' +
 				'<br/>' +
 				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
 				'<br/>' +
@@ -179,21 +179,21 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instTemplateCategoryRight : '<div style="text-align:center; font-size:20px; font-family:arial">' +
 				'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 				'<br/>' +
-				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>.</p>' +
-				'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
+				'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
+				'<br/>' +
 				'<p>Each word or person will appear in the center of the screen, one at a time.</p>' +
 				'<br/>' +
 				'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
 				'<br/>' +
 				'<p>Press the <b>space bar</b> to begin.</p>' +
-			  	'</div>',
+				'</div>',
 			
 			instTemplateCategoryLeft : '<div style="text-align:center; font-size:20px; font-family:arial">' +
 			  	'<p><font color="#000000"><u>Part blockNum of nBlocks</u></font></p>' +
 			  	'<br/>' +
-			 	'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>.</p>' +
-			  	'<p>Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
-			  	'<p>Each word or person will appear in the center of the screen, one at a time.</p>' +
+			 	'<p>Use the <b>E</b> key for words that belong to the category <font color="#0099ff"><b>attribute1</b></font> and for people who belong to the group <font color="#cc0100"><b>thecategory</b></font>. Use the <b>I</b> key for words that belong to the category <font color="#0099ff"><b>attribute2</b></font>.</p>' +
+				'<br/>' +
+				'<p>Each word or person will appear in the center of the screen, one at a time.</p>' +
 			  	'<br/>' +
 			  	'<p>If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Press the other key to continue.</p>' +
 			  	'<br/>' +
