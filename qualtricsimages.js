@@ -10,9 +10,10 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects // test
-    		    	{image : 'Avatar.png'}    	
+    		    	{image : 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_L7ZxuuAyCVkJqy3'}    	
 		    ], 
 		    //Stimulus css (style)
+			stimulusCss: {'max-height': '120px'},
 		    css : {color:'#cc0100','font-size':'3em'}
 		  },	
 
@@ -57,9 +58,9 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscript.js'], function(AP
 			css : {color:'#0099ff','font-size':'3em'}
 			},
 
-  		base_url : {//Where are your images at?
-    		image : 'https://martin6101.github.io/IAT/Avatar.png'
-  		},
+  		//base_url : {//Where are your images at?
+    	//	image : 'https://martin6101.github.io/IAT/Avatar.png'
+  		//},
   		fullscreen:false
 	});
 });
