@@ -6,7 +6,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 		    name : 'buitenlanders', //Will appear in the data. (this is a test)
 		    title : {
 		      media : {word : 'buitenlanders'}, //Name of the category presented in the task.
-		      css : {color:'#cc0100','font-size':'0.8em'}, //Style of the category title.
+		      css : {color:'#cc0100','font-size':'1.8em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects // test
@@ -22,7 +22,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 			name : 'bad', //Attribute label
 			title : {
 				media : {word : 'bad'}, //Name of the category presented in the task.
-				css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
+				css : {color:'#0099ff','font-size':'1.8em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
@@ -42,7 +42,7 @@ define(['pipAPI', 'https://martin6101.github.io/IAT/fullscriptimages.js'], funct
 			name : 'good', //Attribute label
 			title : {
 				media : {word : 'good'}, //Name of the category presented in the task.
-				css : {color:'#0099ff','font-size':'0.8em'}, //Style of the category title.
+				css : {color:'#0099ff','font-size':'1.8em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
