@@ -16,7 +16,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				canvasBackground: '#ffffff',
 				css: {
 					'width': '1200px',  // Increase canvas width
-					'height': '500px', //was 600
+					'height': '600px', //can also do 500
 					'border-width': '2px',  // Normal border
 					'border-color': '#525252',  // Gray border //For black: #000000
 					'border-style': 'solid'
