@@ -151,7 +151,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			orCss : {'font-size':'1.8em', color:'#525252', 'font-family': 'Times New Roman'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size: 0.6em; font-family: Times New Roman;">' +
+			remindErrorText : '<p align="center" style="font-size: 0.8em; font-family: Times New Roman;">' +
 			'Press the <b>E</b> key for left and the <b>I</b> key for right.<br/>' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.</p>',
