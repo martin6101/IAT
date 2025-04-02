@@ -378,26 +378,26 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		var leftLayout = [
 			//{location:{left:6,top:1},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
 			//{location:{right:6,top:1},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
-			{location:{left:1,top:0},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
-			{location:{right:1,top:0},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css},
-			{location:{left:1,top:1 + (piCurrent.attribute1.title.height|3)}, media:{word:piCurrent.orText}, css:piCurrent.orCss},
-			{location:{left:1,top:2 + (piCurrent.attribute1.title.height|3)},media:piCurrent.category.title.media, css:piCurrent.category.title.css}
+			{location:{left:6,top:4},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
+			{location:{right:6,top:4},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css},
+			{location:{left:6,top:4 + (piCurrent.attribute1.title.height|3)}, media:{word:piCurrent.orText}, css:piCurrent.orCss},
+			{location:{left:6,top:11 + (piCurrent.attribute1.title.height|3)},media:piCurrent.category.title.media, css:piCurrent.category.title.css}
 		];
 		// layout object for the trials where category on right
 		var rightLayout = [
 			//{location:{left:6,top:1},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
 			//{location:{right:6,top:1},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
-			{location:{left:1,top:0},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
-			{location:{right:1,top:0},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css},
-			{location:{right:1,top:1 + (piCurrent.attribute2.title.height|3)},media:{word:piCurrent.orText}, css:piCurrent.orCss},
-			{location:{right:1,top:2 + (piCurrent.attribute2.title.height|3)},media:piCurrent.category.title.media, css:piCurrent.category.title.css}
+			{location:{left:6,top:4},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
+			{location:{right:6,top:4},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css},
+			{location:{right:6,top:4 + (piCurrent.attribute2.title.height|3)},media:{word:piCurrent.orText}, css:piCurrent.orCss},
+			{location:{right:6,top:11 + (piCurrent.attribute2.title.height|3)},media:piCurrent.category.title.media, css:piCurrent.category.title.css}
 		];
 		// layout object for practice blocks (no category)
 		var pracLayout = [
 			//{location:{left:6,top:1},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
 			//{location:{right:6,top:1},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
-			{location:{left:1,top:0},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
-			{location:{right:1,top:0},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css}
+			{location:{left:6,top:4},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
+			{location:{right:6,top:4},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css}
 		];
 		
 		var reminderStimulus = 	{location:{bottom:1}, css: {color:piCurrent.fontColor,'font-size':'1em'}, media : {html: piCurrent.remindErrorText}};
